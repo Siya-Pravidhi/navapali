@@ -1,6 +1,6 @@
 site_name: Navapali
-theme:
-  name: 'cinder'
+# theme:
+#   name: 'cinder'
 docs_dir : 'docs'
 nav:
   - home: "index.md"
