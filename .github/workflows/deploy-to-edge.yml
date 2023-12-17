@@ -49,6 +49,6 @@ jobs:
 
       - name: Publish wasmer app
         run: |
-          wasmer deploy --token hello --publish-package --non-interactive --no-validate --no-persist-id -vvv --token $WASMER_TOKEN
+          wasmer deploy --publish-package --non-interactive --no-validate --no-persist-id -vvv --token $WASMER_TOKEN
         env:
           WASMER_TOKEN: ${{ secrets.WASMER_TOKEN }}
