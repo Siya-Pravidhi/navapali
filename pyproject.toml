@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "navapali"
+version = "0.1.0"
+description = ""
+authors = ["Ayush Jha <ayush@wasmer.io>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mkdocs = "^1.5.3"
+lantana = "^2.7.7.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

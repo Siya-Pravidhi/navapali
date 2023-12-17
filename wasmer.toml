@@ -1,0 +1,10 @@
+[package]
+name = "ayysadmin/navapali"
+version = "0.8.1"
+description = "ayysadmin/navapali website"
+
+[dependencies]
+"sharrattj/static-web-server" = "1"
+
+[fs]
+public = "public"

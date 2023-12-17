@@ -1,0 +1,9 @@
+site_name: Navapali
+theme:
+  name: 'cinder'
+docs_dir : 'docs'
+nav:
+  - home: "index.md"
+  - keyboard: "navapali-keyboard.md"
+  - about: "about.md"
+  - show interest: "contact.md"
