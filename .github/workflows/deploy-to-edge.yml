@@ -28,16 +28,23 @@ jobs:
         with:
           python-version: '3.10'
 
+      - uses: Gr1N/setup-poetry@v8
+
+      - uses: actions/cache@v2
+        with:
+          path: ~/.cache/pypoetry/virtualenvs
+          key: ${{ runner.os }}-poetry-${{ hashFiles('poetry.lock') }}
+
       - name: Setup Wasmer
         uses: wasmerio/setup-wasmer@v2
 
       - name: Install deps
         run: |
-          pip install .
+          poetry install
 
       - name: Build
         run: |
-          mkdocs build -d public
+          poetry run -- mkdocs build -d public
 
 
       - name: Publish wasmer app
